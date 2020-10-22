@@ -1,1 +1,45 @@
 /* Put your style information here! */
+.column  { 
+    display: flex;
+    flex-direction: column;
+    }
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    margin: 2em;
+    text-align: center;
+
+}
+
+.webpage {
+    width: 65em;
+    margin: 1.5em 0;
+}
+
+.section {
+    margin: 1em 12em;
+    text-align: flex-start;
+
+}
+
+
+h1, h2, h3, p, li, figcaption { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f2f7f2
+    }
+
+figcaption {
+    text-align: center;
+}
+a, a:link, a:hover, a:visited, a:active {
+    color: #FF709D;
+}
+body {
+    background-color: #4B6ABE;
+}
+

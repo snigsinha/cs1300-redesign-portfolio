@@ -2,13 +2,135 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Redesigning Boston Airport Cab's Reservation Webpage</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+                           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+                           crossorigin="anonymous">
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
     <!-- TODO: put your HTML code here! -->
+    <div class="column" style="background-color: #4B6ABE;">
+      <div class="title">
+        <h1>Redesigning Boston Airport Cab's Reservation Webpage</h1>
+      </div>
+      <div class="section">
+        <h2>Introduction</h2>
+        <p>
+          Whenever I fly back to Providence, I use <a href="https://bostonairportcab.com/taxi-reservation.php">Boston Airport Cab</a> to book a car from Boston's Logan Airport to Providence. 
+          While I love my experience as a rider, whenever I use the site, the experience is far from seamless.
+          I often find myself being confused and sometimes having to restart the reservation process from start.
+        </p>
+
+        <div>
+          <figure>
+            <figcaption> <h5> Boston Airport Cab's Reservation Webpage</h5></figcaption>
+        <img src="Original-Page.png" class="webpage"/>
+      </figure>
+      </div>
+
+        <p>
+          So thought it would be a valuable UI/UX task to look at the reservation webpage and...
+        
+          <ol>
+            <li> Analyze its usability</li>
+            <li>Redesign the webpage with a lo-fi and hi-fi prototype</li>
+            <li>Implement a responsive redesign</li>
+          </ol>
+        
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>1. Usability Analysis</h2>
+        <p>
+          Using Jakob Nielsen's 10 Usability Heuristics for User Interface Design,  I identified usability issues that can be addressed in my redesign. 
+        </p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 30%">Heuristic</th>
+              <th style="width: 10%">Rating</th>
+              <th style="width: 60%">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1: Visibility of system status</th>
+              <td>1</td>
+              <td> <strong>Nothing indicates status of reservation booking progress</strong></td>
+         
+            </tr>
+            <tr>
+              <th>2: Match between system and the real world</th>
+              <td>2</td>
+              <td>The reservation booking form is consistent with forms on Airbnb, Expedia and taxi reservation services</td>
+       
+            </tr>
+            <tr>
+              <th>3: User control and freedom</th>
+              <td>1</td>
+              <td>If a user wants to go back and change reservation properties, all previously selected inputs are cleared. <strong>The user has to start over</strong></td>
+            </tr>
+
+            <tr>
+              <th>4: Consistency and standards</th>
+              <td>3</td>
+              <td>The same language is used to refer to the properties of booking (e.g. Vehicle, Passengers)</td>
+            </tr>
+
+            <tr>
+              <th>5: Error prevention</th>
+              <td>3</td>
+              <td>Errors are indicated if the user tries to continue their reservation</td>
+            </tr>
+
+            <tr>
+              <th>6: Recognition rather than recall</th>
+              <td>3</td>
+              <td>Option to start a reservation stands out as it is a separate section on the page in a visual layout that stands out</td>
+            </tr>
+
+            <tr>
+              <th>7: Flexibility and efficiency of use</th>
+              <td>2</td>
+              <td>Users can go back and change reservation properties. Users can go straight to the reservation form and start a reservation.</td>
+            </tr>
+
+            <tr>
+              <th>8: Aesthetic and minimalist design</th>
+              <td>1</td>
+              <td>There is a lot of <strong>irrelevant information</strong> that clutters the webpage design. (E.g. images, repeated instructions) 
+                There is some information that is better left on the Home and About page e.g. TripAdvisor Reviews. User can get confused and find it 
+                hard to focus on the information and actions they need. 
+                <strong>On smaller devices the user has to scroll until the end to get to reservation form</strong></td>
+            </tr>
+
+            <tr>
+              <th>9: Help users recognize, diagnose, and recover from error</th>
+              <td>3</td>
+              <td>There are error messages that tell the user if they've chosen an unsuitable vehicle for the selected number of passengers/luggage. </td>
+            </tr>
+
+            <tr>
+              <th>10: Help and documentation</th>
+              <td>1</td>
+              <td>The webpage has both written  and video instructions to make a reservation. However, if designed well, instructions are not needed. </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+    
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
+  
+</html>
 </html>
